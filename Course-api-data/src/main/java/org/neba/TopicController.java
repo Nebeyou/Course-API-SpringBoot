@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TopicController {
 	@Autowired
 	private TopicService topicService;
-
+	public final static String URL="/topics"; 
 	@RequestMapping("/topics")
 	public List<Topic> getTopics() {
 		return topicService.getAllTopics();
